@@ -11,6 +11,7 @@
         <label for="fullName">Nome completo</label>
         <input
           id="fullName"
+          name="fullName"
           type="text"
           required
           placeholder="Escreva seu nome"
@@ -19,33 +20,33 @@
 
       <div>
         <label for="email">E-mail</label>
-        <input id="email" type="email" required />
+        <input id="email" name="email" type="email" required />
       </div>
 
       <div>
         <label for="birthDate">Data de nascimento</label>
-        <input id="birthDate" type="date" required />
+        <input id="birthDate" name="birthDate" type="date" required />
       </div>
 
       <div>
         <label for="password">Senha</label>
-        <input id="password" type="password" minlength="6" />
+        <input id="password" name="password" type="password" minlength="6" />
       </div>
 
       <div>
         <label>Gênero</label>
         <div>
-          <input id="male" type="radio" />
+          <input id="male" name="gender" type="radio" />
           <label for="male">Masculino</label>
         </div>
 
         <div>
-          <input id="female" type="radio" />
+          <input id="female" name="gender" type="radio" />
           <label for="female">Feminino</label>
         </div>
 
         <div>
-          <input id="other" type="radio" />
+          <input id="other" name="gender" type="radio" />
           <label for="other">Outros</label>
         </div>
       </div>
@@ -53,12 +54,12 @@
       <div>
         <label for="">Pet</label>
         <div>
-          <input id="dog" type="checkbox" />
+          <input id="dog" name="dog" type="checkbox" />
           <label for="dog">Cachorro</label>
         </div>
 
         <div>
-          <input id="cat" type="checkbox" />
+          <input id="cat" name="cat" type="checkbox" />
           <label for="cat">Gato</label>
         </div>
       </div>
@@ -66,7 +67,7 @@
       <div>
         <label for="Carro"></label>
         <div>
-          <select>
+          <select name="car">
             <option value="Mercedes">Mercedes</option>
             <option value="Ferrari">Ferrari</option>
             <option value="Honda">Honda</option>
@@ -75,10 +76,10 @@
       </div>
 
       <div>
-        <label for="">Sobre mim</label>
+        <label>Sobre mim</label>
 
         <div>
-          <textarea></textarea>
+          <textarea name="aboutMe"></textarea>
         </div>
       </div>
 
