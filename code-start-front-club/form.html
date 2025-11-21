@@ -1,11 +1,91 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <form action="">
+      <div>
+        <label for="fullName">Nome completo</label>
+        <input
+          id="fullName"
+          type="text"
+          required
+          placeholder="Escreva seu nome"
+        />
+      </div>
+
+      <div>
+        <label for="email">E-mail</label>
+        <input id="email" type="email" required />
+      </div>
+
+      <div>
+        <label for="birthDate">Data de nascimento</label>
+        <input id="birthDate" type="date" required />
+      </div>
+
+      <div>
+        <label for="password">Senha</label>
+        <input id="password" type="password" minlength="6" />
+      </div>
+
+      <div>
+        <label>Gênero</label>
+        <div>
+          <input id="male" type="radio" />
+          <label for="male">Masculino</label>
+        </div>
+
+        <div>
+          <input id="female" type="radio" />
+          <label for="female">Feminino</label>
+        </div>
+
+        <div>
+          <input id="other" type="radio" />
+          <label for="other">Outros</label>
+        </div>
+      </div>
+
+      <div>
+        <label for="">Pet</label>
+        <div>
+          <input id="dog" type="checkbox" />
+          <label for="dog">Cachorro</label>
+        </div>
+
+        <div>
+          <input id="cat" type="checkbox" />
+          <label for="cat">Gato</label>
+        </div>
+      </div>
+
+      <div>
+        <label for="Carro"></label>
+        <div>
+          <select>
+            <option value="Mercedes">Mercedes</option>
+            <option value="Ferrari">Ferrari</option>
+            <option value="Honda">Honda</option>
+          </select>
+        </div>
+      </div>
+
+      <div>
+        <label for="">Sobre mim</label>
+
+        <div>
+          <textarea></textarea>
+        </div>
+      </div>
+
+      <div>
+        <input type="submit" value="Finalizar" />
+        <input type="reset" value="Limpar" />
+      </div>
+    </form>
+  </body>
 </html>
