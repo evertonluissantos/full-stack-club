@@ -1,0 +1,54 @@
+body {
+    background-color: #222;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    border-radius: 3px;
+    background-color: white;
+    position: relative;
+    top: 0;
+    left: 0;
+ 
+    /*Animação*/
+    /* animation-name: grow-width;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out; */
+
+    animation-name: move;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes move {
+    25% {
+        left: 0;
+        top: 200px;
+    }
+
+    50% {
+        left: 200px;
+        top: 200px;
+    }
+
+    75% {
+        left: 0;
+        top: 200px;
+    }
+
+    100% {
+        left: 0;
+        top: 0;
+    }
+}
+
+@keyframes grow-width {
+    to {
+        width: 500px;
+        background-color: red;
+    }
+}
